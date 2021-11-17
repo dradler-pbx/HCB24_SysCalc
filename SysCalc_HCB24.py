@@ -4,24 +4,24 @@ import numpy as np
 from CoolProp.CoolProp import PropsSI as CPPSI
 from openpyxl import workbook, load_workbook
 from tqdm import tqdm
-TBox = 2.  # degC
-TAi = 50.  # degC
+TBox = 4.  # degC
+TAi = 30.  # degC
 
+RPM = 1800  # 1/min
 Refrigerant = "R290"
 SecLiquid = "INCOMP::MEG[0.5]"
 kEVAP = 420.  # W/m2/K
 AEVAP = 1.  # m2
 dTSH = 4.  # K
-kCOND = 70.  # W/m2/K
+kCOND = 45.  # W/m2/K
 ACOND = 10.  # m2
-mACOND = 0.8  # kg/s
+mACOND = 0.56  # kg/s
 dTSC = 0.1  # K
 kHEX = 500  # W/m2/K
 AHEX = 1.  # m2
 mABox = 0.5  # kg/s
 
 mSL = 0.25  # kg/s
-RPM = 6000  # 1/min
 eta_V = 0.9  # -
 eta_S = 0.65  # -
 stroke = 33e-6  # m3
